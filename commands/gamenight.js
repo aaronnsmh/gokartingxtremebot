@@ -9,7 +9,7 @@ if(message.member.roles.has(allowedRole.id)) {
 		   if (text.length < 1) return message.channel.send("You can't do a gamenight of nothing!");
 		   //const colour = args.slice(2).join("");
 		   const embed = new Discord.RichEmbed()
-		   .setColor("#FF0000")
+		   .setColor("#0fc0f4")
 		   .setThumbnail("https://t1.rbxcdn.com/dbffc3e5422149690627eab815bb193e")
 		   .setTitle(":mega: Gamenight:")
 		   .setDescription(text)
