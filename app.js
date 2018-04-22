@@ -46,7 +46,7 @@ if (sender.bot) return;
     }
    
    
-   if (message.mentions.members.firstKey() === '422393536420511752') {
+   if (message.mentions.members.firstKey() === '437524390280822784') {
     message.channel.send(':zzz: :zzz: :sleeping: You woke me. How rude! :angry:')
    }
 
