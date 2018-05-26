@@ -5,7 +5,7 @@ if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(
 	
 	
 var groupId = 2633056;
-var maximumRank = 5;
+var maximumRank = 6;
 
 
 roblox.login({username: process.env.username, password: process.env.password}).then((success) => {
