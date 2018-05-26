@@ -23,8 +23,10 @@ roblox.login({username: process.env.username, password: process.env.password}).t
 						message.channel.send(`${id} is rank ${rank} and not promotable.`)
 					} else {
 						roblox.promote(groupId, id)
+						
 						.then(function(roles){
 							message.channel.send(`Promoted from ${roles.oldRole.Name} to ${roles.newRole.Name}`)
+							roblox.message(id, "Promotion", "You've been promoted at GKX")
 						}).catch(function(err){
 							message.channel.send("Failed to promote.")
 						});
