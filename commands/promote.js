@@ -1,9 +1,8 @@
 var roblox = require('noblox.js');
 
-exports.run = (Discord, client, message, args) => {
-if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send("No can do pal! Only BoX can run this command..");
-	
-	
+exports.run = (Discord, client, message, args) => {;
+let allowedRole = message.guild.roles.find("name", "Bot Ranker");	
+if(!message.member.roles.has(allowedRole.id)) return message.channel.send("No can do pal! Only users with the `Bot Ranker` role can run this command.");
 var groupId = 2633056;
 var maximumRank = 6;
 
